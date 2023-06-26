@@ -20,7 +20,7 @@ for _ in range(5):
 
 env.close()
 
-#Simple policy function 
+# Simple policy function 
 policy = lambda _,__,___, tip_velocity : int( tip_velocity > 0 )
 n_bins = ( 6 , 12 )
 lower_bounds = [ env.observation_space.low[2], -math.radians(50) ]
